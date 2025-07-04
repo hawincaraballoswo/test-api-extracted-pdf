@@ -1,0 +1,1 @@
+fastapi run src\extracted-pdf-api\main.py
