@@ -15,7 +15,7 @@ class AzureOpenAISetting(BaseModel):
     api_version: str = Field(default="2024-12-01-preview")
 
 class Settings(BaseSettings):
-    port: int = Field(default=80)
+    port: int = Field(default=8000)
     host: str = Field(default="0.0.0.0")
     log_level: str = Field(default="info")
     route_file: str = Field(default="")
