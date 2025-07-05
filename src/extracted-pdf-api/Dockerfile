@@ -11,7 +11,7 @@ COPY . .
 RUN pip install --no-cache-dir -r src/extracted-pdf-api/requirements.txt
 
 # Exponer el puerto en el que se ejecutará la aplicación
-EXPOSE 80
+EXPOSE 8000
 
 # Comando para ejecutar la aplicación con Uvicorn
-CMD ["uvicorn", "src.extracted_pdf_api.main:app", "--host", "0.0.0.0", "--port", "80", "--reload"]
+CMD ["uvicorn", "src.extracted_pdf_api.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
